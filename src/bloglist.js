@@ -1,4 +1,4 @@
-const Bloglist = ({ blog, title,handleDelete }) => {
+const Bloglist = ({ blog, title}) => {
   return (
     <div className="blog-list">
       <h2>{title}</h2>
@@ -6,7 +6,7 @@ const Bloglist = ({ blog, title,handleDelete }) => {
         <div className="blogs-preview" key={blog.id}>
           <h2>{blog.title}</h2>
           <p>written by {blog.author}</p>
-          <button onClick={() =>handleDelete(blog.id)}>delete</button>
+
         </div>
       ))}
     </div>
