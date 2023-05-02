@@ -5,11 +5,18 @@ const [title, setTitle] = useState('');
 const [body, setBody] = useState('');
 const [author, setAuthor] = useState('');
 
+const handleSubmit = (e) => {
+    e.preventDefault();
+    const blog ={title, body, author }
+
+    console.log(blog)
+}
+
     return ( 
         <div className="create">
             <h2>Add a new Blog</h2>
 
-            <form> 
+            <form onSubmit={handleSubmit}> 
 
                 <label >Blog title:</label>
               <input type="text"
@@ -28,7 +35,7 @@ const [author, setAuthor] = useState('');
                 <label >Blog Author:</label>
                 <select
                 value={author}
-                onChange={(e)=>setBody(e.target.value)}>
+                onChange={(e)=>setAuthor(e.target.value)}>
                     <option value="mario">mario</option>
                     <option value="miles">miles</option>
                 </select>
