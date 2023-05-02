@@ -46,18 +46,6 @@
  border-radius: 8px;
 
 }
-button{
-  width: 50px;
-  margin-left: 5px;
-  height: 30px;
-  font-size: 15px;
-  color: pink;
-  border-radius: 4px;
-  border: 0;
-  background-color: rgb(58, 9, 9);
-  
-}
-
 input{
   padding: 10px;
   margin: 5px;
@@ -78,6 +66,37 @@ input{
   color: #f1356d;
   margin-bottom: 8px;
 }
-h2{
-  color: black;
+.blogs-preview a{
+  text-decoration: none;
+}
+.blog-details h2{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blog-details div{
+  margin: 20px 0;
+}
+
+.create{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label{
+  text-align: left;
+  display: block;
+}
+.create h2{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select{
+  width: 100%;
+  padding: 10px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
 }
